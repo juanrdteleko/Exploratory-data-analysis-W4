@@ -24,3 +24,6 @@ Q5<-ggplot(Baltimore_NEI_SCCmotor,aes(factor(year),Emissions)) +
 
 print(Q5)
 
+dev.copy(png, file="plot5.png", width=480, height=480)
+dev.off()
+

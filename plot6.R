@@ -31,3 +31,5 @@ Q6<-ggplot(ALL_NEI_SCCmotor,aes(factor(year),Emissions,fill=Place)) +
 
 print(Q6)
 
+dev.copy(png, file="plot6.png", width=480, height=480)
+dev.off()

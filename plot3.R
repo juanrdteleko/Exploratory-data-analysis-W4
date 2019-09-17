@@ -14,3 +14,6 @@ Q3<-ggplot(Baltimore_em,aes(factor(year),Emissions,fill=type)) +
     labs(title=expression("PM2.5. Emissions in Baltimore City per sources. 1999–2008"))
 
 print(Q3)
+
+dev.copy(png, file="plot3.png", width=480, height=480)
+dev.off()
